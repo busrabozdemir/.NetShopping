@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>DotNetShopping - Order Received</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:10pt;
+        }
+        .content {
+            max-width: 600px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .header {
+            background-color: #97907b;
+            color: white;
+            font-size: 16pt;
+            font-weight: bold;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .info{
+            padding:20px;
+            text-align:left;
+        }
+        .left{
+            float:left;
+        }
+        .info .left div{
+            padding-top:10px;
+            padding-bottom:10px;
+        }
+        .info .right div {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .right{
+            float:right;
+        }
+        table{
+            width:100%;
+            padding-top:20px;
+            border-spacing:0px;
+        }
+            table th {
+                border-bottom: 1px solid #97907b;
+            }
+        .footer {
+            font-style: italic;
+            color: #97907b;
+            font-size:12pt;
+            padding:20px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="header">DotNetShopping Order Received</div>
+        <div class="info">
+            <div class="left">
+                <div>
+                    <span class="left">Order Date : </span><span class="right">[#ORDERDATE#]</span>
+                </div>
+                <div>
+                    <span class="left">Order No : </span><span class="right">[#ORDERNO#]</span>
+                </div>
+            </div>
+            <div class="right">
+                <div>
+                    <span class="left">Payment : </span><span class="right">[#PAYMENT#]</span>
+                </div>
+                <div>
+                    <span class="left">Total : </span><span class="right">[#ORDERTOTAL#]</span>
+                </div>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Total Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                [#PRODUCTS#]
+            </tbody>
+        </table>
+        <div class="footer">
+            <div>Thank you for your order.</div>
+        </div>
+    </div>
+</body>
+</html>

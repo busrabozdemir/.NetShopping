@@ -1,0 +1,7 @@
+﻿@model List<DotNetShopping.Models.ProductBoxModel>
+@foreach (DotNetShopping.Models.ProductBoxModel product in Model)
+{
+    <div class="Product">
+        @Html.Partial("_ProductSmallPartial", product)
+    </div>
+}

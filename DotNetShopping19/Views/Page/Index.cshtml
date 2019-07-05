@@ -1,0 +1,12 @@
+﻿@model DotNetShopping.Models.Page
+@{
+    ViewBag.Title = Model.PageTitle;
+    ViewBag.Keywords = Model.Keywords;
+    ViewBag.Description = Model.Description;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@Model.PageTitle</h1>
+<p>
+    @Html.Raw(Model.PageBody)
+</p>
